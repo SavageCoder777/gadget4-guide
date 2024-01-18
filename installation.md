@@ -109,3 +109,8 @@ exit
 - Open the gadget4-master file in a code editor (ex. VSCode)
     - IMPORTANT: Enter wsl on the code editor terminal to use the Linux features required for this code
 - Continue from Step 5 in the macOS section
+
+## Further References
+- GADGET-4 Code Website: https://wwwmpa.mpa-garching.mpg.de/gadget4/
+- GADGET-4 Manual: https://wwwmpa.mpa-garching.mpg.de/gadget4/gadget4_manual.pdf
+- Installation guide in Google Doc format: https://docs.google.com/document/d/1WSbGrj2irlQHA59gG0gqhueiF8eAra_0Nsk6QdJXiJ0/edit?usp=sharing
