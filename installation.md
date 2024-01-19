@@ -7,7 +7,9 @@
 
 - Open the gadget4-master folder in a code editor (ex. VSCode)
 - Download homebrew: 
-    - /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 - Download needed libraries:
 ```
 brew install python
@@ -20,8 +22,11 @@ brew install openmpi
 
 - Go to the Makefile.lib file: `~/gadget4-master/buildsystem/Makefile.lib`
     - Change line 5 to: `HDF5_VERSION=1.14.3`
-    - Change the link in line 68 to: https://hdf-wordpress-1.s3.amazonaws.com/wp-content/uploads/manual/HDF5/HDF5_1_14_3/src/hdf5-$(HDF5_VERSION).tar.gz
-    - Within the buildsystem directory, run `make -f Makefile.lib`
+    - Change the link in line 68 to:
+```
+https://hdf-wordpress-1.s3.amazonaws.com/wp-content/uploads/manual/HDF5/HDF5_1_14_3/src/hdf5-$(HDF5_VERSION).tar.gz
+```
+- Within the buildsystem directory, run `make -f Makefile.lib`
         - This will download, compile, and build four of the required libraries (fftw, gsl, hdf5, hwloc)
 
 - Go to `Makefile.gen.libs` which is also within the buildsystem directory
@@ -35,8 +40,11 @@ brew install openmpi
     PYTHON   = python3
     ```
 
-- Download: https://repository.prace-ri.eu/git/UEABS/ueabs/-/raw/master/gadget/example_ics.tar.gz
-    - Move the file to the gadget4-master directory from Downloads after uncompressing it
+- Download:
+```
+https://repository.prace-ri.eu/git/UEABS/ueabs/-/raw/master/gadget/example_ics.tar.gz
+```
+- Move the file to the gadget4-master directory from Downloads after uncompressing it
 ```
 tar -zxf example_ics.tar.gz
 mv ExampleICs ~/gadget4-master/
